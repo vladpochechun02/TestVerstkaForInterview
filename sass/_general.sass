@@ -1,0 +1,233 @@
+button
+    background: none
+    border: 0px
+    cursor: pointer
+    
+.dashboard
+    position: relative
+    display: inline-block
+    box-sizing: border-box
+    width: 306px
+    // height: 100%
+    height: 1198px
+    padding: 37px 28px 76px 28px
+    background: #FFF
+    box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50)
+    margin-right: 71px
+    &__logo
+        height: 39px
+        display: flex
+        align-items: center
+        margin-bottom: 65px
+        &-img
+            margin-right: 8px
+        &-header 
+            position: relative
+            width: 150px
+            display: inline-block
+            font-size: 26px
+            font-weight: 600
+            letter-spacing: 0.26px
+        &-version 
+            position: absolute
+            right: 4px
+            bottom: 3px
+            color: #838383
+            font-size: 10px
+            font-weight: 500
+            letter-spacing: -0.1px
+    &__elements
+        &-item
+            position: relative
+            box-sizing: border-box
+            width: 250px
+            height: 46px
+            padding: 11px
+            display: flex
+            align-items: center
+            margin-bottom: 18px
+            border-radius: 8px;
+        &-img 
+            margin-right: 14px
+            width: 24px
+        &-title 
+            color: $grey-dash-text
+            font-family: Poppins
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            letter-spacing: -0.14px
+        &-arr 
+            position: absolute
+            right: 15px
+    &__personality
+        display: flex
+        align-items: center
+        position: absolute
+        bottom: 76px
+        &-img
+            border-radius: 100%
+            width: 42px
+            margin-right: 12px
+            cursor: pointer
+        &-name
+            font-size: 14px
+            font-weight: 500
+            letter-spacing: 0.14px
+            margin-bottom: 2px
+        &-position 
+            color: #757575;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.12px
+.greetings 
+    font-size: 24px
+    font-weight: 500
+    margin-top: 41px
+
+.customers
+    &__panel
+        padding: 30px 0 40px 0
+        height: 812px
+        width: 968px
+        background: #FFF
+        filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.50))
+        border-radius: 20px
+        margin-top: 51px
+    &__header
+        display: flex
+        align-items: center
+        // justify-content: space-between
+        width: 877px
+        height: 61px
+        margin-left: 38px
+        margin-right: 53px
+    &__title
+        width: 155px
+        font-size: 22px
+        font-weight: 600
+        letter-spacing: -0.22px
+        margin-bottom: 7px
+    &__descr
+        color: #16C098;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.14px;
+    &__search-bar
+        display: flex
+        align-items: center
+        margin-left: 506px
+        width: 216px
+        height: 38px
+        background-color: #F9FBFF
+        padding: 7px 8px
+        border-radius: 10px
+        & img 
+            width: 24px
+            height: 24px
+            margin-right: 8px
+        & input 
+            background-color: #F9FBFF
+            flex: 1
+            border: none
+            outline: none
+            font-size: 14px
+    &__label 
+        display: flex
+        align-items: center
+        margin-top: 40px
+        padding: 0 67px 0 38px
+        color: $grey-text
+        font-size: 14px
+        font-weight: 500
+        letter-spacing: -0.14px
+    &__data
+        display: flex
+        align-items: center
+        padding: 0 44px 0 38px
+        font-size: 14px
+        font-weight: 500
+        letter-spacing: -0.14px
+    &__name 
+        width: 118px
+        margin-right: 54px
+    &__company 
+        width: 68px
+        margin-right: 63px
+    &__phone
+        width: 109px
+        margin-right: 47px
+    &__email
+        width: 169px
+        margin-right: 38px
+    &__country
+        width: 94px
+        margin-right: 46px
+    &__status
+        margin-left: 12px
+    &__btn
+        display: flex;
+        width: 80px;
+        height: 29px
+        padding: 4px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 4px;
+        color: $active-text
+        border: 1px solid $active-text
+        background: rgba(22, 192, 152, 0.38);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.14px;
+        &.inactive
+            background: $inactive-bg
+            color: $inactive-text
+            border: 1px solid $inactive-text
+    &__footer
+        display: flex
+        align-items: center
+        padding: 10px 44px 0 38px
+    &__amount
+        width: 243px
+        color: $grey-text
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.14px
+        margin-right: 376px
+
+.pagination
+    display: flex
+    &__elem 
+        margin-right: 12px
+        padding: 6px 9px
+        border-radius: 4px
+        border: 1px solid #EEE
+        background: #F5F5F5
+        font-size: 12px
+        font-weight: 500
+        line-height: 100%; /* 12px */
+        letter-spacing: -0.12px
+        &:last-child
+            margin-right: 0
+        &.ellipsis
+            padding: 10px 0 0 0
+            background: none
+            border: none
+
+
+
+.divider
+    // width: 100%
+    margin-top: 14px
+    height: 1px
+    background: #EEE
+    margin-bottom: 24px
+    &-second
+        width: 888px
+        margin: 20px auto
+        padding: 0 44px 0 40px 
+
+.active 
+    background: $active-elem
+    color: #fff
