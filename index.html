@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Customer Dashboard - Manage and Track Customer Information</title>
+    <meta name="description" content="Explore and manage customer data efficiently with our intuitive customer dashboard. Keep track of customer information, status, and interactions.">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,27 +24,27 @@
                 <div class="dashboard__elements-title">Dashboard</div>
             </button>
             <button class="dashboard__elements-item">
-                <img class="dashboard__elements-img" src="img/3d-square.svg" alt="dashboard">
+                <img class="dashboard__elements-img" src="img/3d-square.svg" alt="product">
                 <div class="dashboard__elements-title">Product</div>
                 <img class="dashboard__elements-arr" src="img/chevron-right_1.svg" alt="arrow-right">
             </button>
-            <button class="dashboard__elements-item active">
-                <img class="dashboard__elements-img" src="img/user-square.svg" alt="dashboard">
-                <div class="dashboard__elements-title active">Customers</div>
+            <button class="dashboard__elements-item dashboard__elements-item_active">
+                <img class="dashboard__elements-img" src="img/user-square.svg" alt="customers">
+                <div class="dashboard__elements-title dashboard__elements-title_active">Customers</div>
                 <img class="dashboard__elements-arr" src="img/chevron-right_2.svg" alt="arrow-right">
             </button>
             <button class="dashboard__elements-item">
-                <img class="dashboard__elements-img" src="img/wallet-money.svg" alt="dashboard">
+                <img class="dashboard__elements-img" src="img/wallet-money.svg" alt="income">
                 <div class="dashboard__elements-title">Income</div>
                 <img class="dashboard__elements-arr" src="img/chevron-right_1.svg" alt="arrow-right">
             </button>
             <button class="dashboard__elements-item">
-                <img class="dashboard__elements-img" src="img/discount-shape.svg" alt="dashboard">
+                <img class="dashboard__elements-img" src="img/discount-shape.svg" alt="promote">
                 <div class="dashboard__elements-title">Promote</div>
                 <img class="dashboard__elements-arr" src="img/chevron-right_1.svg" alt="arrow-right">
             </button>
             <button class="dashboard__elements-item">
-                <img class="dashboard__elements-img" src="img/message-question.svg" alt="dashboard">
+                <img class="dashboard__elements-img" src="img/message-question.svg" alt="help">
                 <div class="dashboard__elements-title">Help</div>
                 <img class="dashboard__elements-arr" src="img/chevron-right_1.svg" alt="arrow-right">
             </button>
@@ -59,102 +60,104 @@
     <main class="customers">
         <div class="greetings">Hello Evano 👋🏼,</div>
         <div class="customers__panel">
-            <div class="customers__header">
-                <div>
-                    <div class="customers__title">All Customers</div>
-                    <div class="customers__descr">Active Members</div>
+            <div class="scroll__gor">
+                <div class="customers__header">
+                    <div>
+                        <div class="customers__title">All Customers</div>
+                        <div class="customers__descr">Active Members</div>
+                    </div>
+                    <div class="customers__search-bar">
+                        <img src="img/search.svg" alt="search">
+                        <input type="text" placeholder="Search">
+                    </div>
                 </div>
-                <div class="customers__search-bar">
-                    <img src="img/search.svg" alt="Search">
-                    <input type="text" placeholder="Search">
+                <div class="customers__label">
+                    <div class="customers__name">Customer Name</div>
+                    <div class="customers__company">Company</div>
+                    <div class="customers__phone">Phone Number</div>
+                    <div class="customers__email">Email</div>
+                    <div class="customers__country">Country</div>
+                    <div class="customers__status">Status</div>
                 </div>
+                <div class="divider"></div>
+                <div class="customers__data">
+                    <div class="customers__name">Jane Cooper</div>
+                    <div class="customers__company">Microsoft</div>
+                    <div class="customers__phone">(225) 555-0118</div>
+                    <div class="customers__email">jane@microsoft.com</div>
+                    <div class="customers__country">United States</div>
+                    <button class="customers__btn">Active</button>
+                </div>
+                <div class="divider divider-second"></div>
+                <div class="customers__data">
+                    <div class="customers__name">Floyd Miles</div>
+                    <div class="customers__company">Yahoo</div>
+                    <div class="customers__phone">(205) 555-0100</div>
+                    <div class="customers__email">floyd@yahoo.com</div>
+                    <div class="customers__country">Kiribati</div>
+                    <button class="customers__btn inactive">Inactive</button>
+                </div>
+                <div class="divider divider-second"></div>
+                <div class="customers__data">
+                    <div class="customers__name">Ronald Richards</div>
+                    <div class="customers__company">Adobe</div>
+                    <div class="customers__phone">(302) 555-0107</div>
+                    <div class="customers__email">ronald@adobe.com</div>
+                    <div class="customers__country">Israel</div>
+                    <button class="customers__btn inactive">Inactive</button>
+                </div>
+                <div class="divider divider-second"></div>
+                <div class="customers__data">
+                    <div class="customers__name">Marvin McKinney</div>
+                    <div class="customers__company">Tesla</div>
+                    <div class="customers__phone">(252) 555-0126</div>
+                    <div class="customers__email">marvin@tesla.com</div>
+                    <div class="customers__country">Iran</div>
+                    <button class="customers__btn">Active</button>
+                </div>
+                <div class="divider divider-second"></div>
+                <div class="customers__data">
+                    <div class="customers__name">Jerome Bell</div>
+                    <div class="customers__company">Google</div>
+                    <div class="customers__phone">(629) 555-0129</div>
+                    <div class="customers__email">jerome@google.com</div>
+                    <div class="customers__country">Réunion</div>
+                    <button class="customers__btn">Active</button>
+                </div>
+                <div class="divider divider-second"></div>
+                <div class="customers__data">
+                    <div class="customers__name">Kathryn Murphy</div>
+                    <div class="customers__company">Microsoft</div>
+                    <div class="customers__phone">(406) 555-0120</div>
+                    <div class="customers__email">kathryn@microsoft.com</div>
+                    <div class="customers__country">Curaçao</div>
+                    <button class="customers__btn">Active</button>
+                </div>
+                <div class="divider divider-second"></div>
+                <div class="customers__data">
+                    <div class="customers__name">Jacob Jones</div>
+                    <div class="customers__company">Yahoo</div>
+                    <div class="customers__phone">(208) 555-0112</div>
+                    <div class="customers__email">jacob@yahoo.com</div>
+                    <div class="customers__country">Brazil</div>
+                    <button class="customers__btn">Active</button>
+                </div>
+                <div class="divider divider-second"></div>
+                <div class="customers__data">
+                    <div class="customers__name">Kristin Watson</div>
+                    <div class="customers__company">Facebook</div>
+                    <div class="customers__phone">(704) 555-0127</div>
+                    <div class="customers__email">kristin@facebook.com</div>
+                    <div class="customers__country">Åland Islands</div>
+                    <button class="customers__btn inactive">Inactive</button>
+                </div>
+                <div class="divider divider-second"></div>
             </div>
-            <div class="customers__label">
-                <div class="customers__name">Customer Name</div>
-                <div class="customers__company">Company</div>
-                <div class="customers__phone">Phone Number</div>
-                <div class="customers__email">Email</div>
-                <div class="customers__country">Country</div>
-                <div class="customers__status">Status</div>
-            </div>
-            <div class="divider"></div>
-            <div class="customers__data">
-                <div class="customers__name">Jane Cooper</div>
-                <div class="customers__company">Microsoft</div>
-                <div class="customers__phone">(225) 555-0118</div>
-                <div class="customers__email">jane@microsoft.com</div>
-                <div class="customers__country">United States</div>
-                <button class="customers__btn">Active</button>
-            </div>
-            <div class="divider divider-second"></div>
-            <div class="customers__data">
-                <div class="customers__name">Floyd Miles</div>
-                <div class="customers__company">Yahoo</div>
-                <div class="customers__phone">(205) 555-0100</div>
-                <div class="customers__email">floyd@yahoo.com</div>
-                <div class="customers__country">Kiribati</div>
-                <button class="customers__btn inactive">Inactive</button>
-            </div>
-            <div class="divider divider-second"></div>
-            <div class="customers__data">
-                <div class="customers__name">Ronald Richards</div>
-                <div class="customers__company">Adobe</div>
-                <div class="customers__phone">(302) 555-0107</div>
-                <div class="customers__email">ronald@adobe.com</div>
-                <div class="customers__country">Israel</div>
-                <button class="customers__btn inactive">Inactive</button>
-            </div>
-            <div class="divider divider-second"></div>
-            <div class="customers__data">
-                <div class="customers__name">Marvin McKinney</div>
-                <div class="customers__company">Tesla</div>
-                <div class="customers__phone">(252) 555-0126</div>
-                <div class="customers__email">marvin@tesla.com</div>
-                <div class="customers__country">Iran</div>
-                <button class="customers__btn">Active</button>
-            </div>
-            <div class="divider divider-second"></div>
-            <div class="customers__data">
-                <div class="customers__name">Jerome Bell</div>
-                <div class="customers__company">Google</div>
-                <div class="customers__phone">(629) 555-0129</div>
-                <div class="customers__email">jerome@google.com</div>
-                <div class="customers__country">Réunion</div>
-                <button class="customers__btn">Active</button>
-            </div>
-            <div class="divider divider-second"></div>
-            <div class="customers__data">
-                <div class="customers__name">Kathryn Murphy</div>
-                <div class="customers__company">Microsoft</div>
-                <div class="customers__phone">(406) 555-0120</div>
-                <div class="customers__email">kathryn@microsoft.com</div>
-                <div class="customers__country">Curaçao</div>
-                <button class="customers__btn">Active</button>
-            </div>
-            <div class="divider divider-second"></div>
-            <div class="customers__data">
-                <div class="customers__name">Jacob Jones</div>
-                <div class="customers__company">Yahoo</div>
-                <div class="customers__phone">(208) 555-0112</div>
-                <div class="customers__email">jacob@yahoo.com</div>
-                <div class="customers__country">Brazil</div>
-                <button class="customers__btn">Active</button>
-            </div>
-            <div class="divider divider-second"></div>
-            <div class="customers__data">
-                <div class="customers__name">Kristin Watson</div>
-                <div class="customers__company">Facebook</div>
-                <div class="customers__phone">(704) 555-0127</div>
-                <div class="customers__email">kristin@facebook.com</div>
-                <div class="customers__country">Åland Islands</div>
-                <button class="customers__btn inactive">Inactive</button>
-            </div>
-            <div class="divider divider-second"></div>
             <div class="customers__footer">
                 <div class="customers__amount">Showing data 1 to 8 of  256K entries</div>
                 <div class="pagination">
                     <button class="pagination__arrow pagination__elem">&#60;</button>
-                    <button class="pagination__page pagination__elem active">1</button>
+                    <button class="pagination__page pagination__elem pagination__elem_active">1</button>
                     <button class="pagination__page pagination__elem">2</button>
                     <button class="pagination__page pagination__elem">3</button>
                     <button class="pagination__page pagination__elem">4</button>
@@ -165,6 +168,9 @@
             </div>
         </div>
     </main>
+
+    <div class="burger-icon">&#9776;</div>
+    <div class="overlay"></div>
 
     <script src="script.js"></script>
 </body>

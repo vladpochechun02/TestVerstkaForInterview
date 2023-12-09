@@ -5,7 +5,7 @@ button
     
 .dashboard
     position: relative
-    display: inline-block
+    display: block
     box-sizing: border-box
     width: 306px
     // height: 100%
@@ -14,6 +14,7 @@ button
     background: #FFF
     box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50)
     margin-right: 71px
+    transition: 0.5s all
     &__logo
         height: 39px
         display: flex
@@ -46,7 +47,13 @@ button
             display: flex
             align-items: center
             margin-bottom: 18px
-            border-radius: 8px;
+            border-radius: 8px
+            transition: 0.5s all
+            &_active 
+                background: $active-elem
+                color: #fff
+            &:hover
+                box-shadow: 0px 10px 60px 0px rgba(167, 167, 167, 0.5)
         &-img 
             margin-right: 14px
             width: 24px
@@ -57,6 +64,9 @@ button
             font-style: normal
             font-weight: 500
             letter-spacing: -0.14px
+            &_active 
+                background: $active-elem
+                color: #fff
         &-arr 
             position: absolute
             right: 15px
@@ -166,24 +176,30 @@ button
     &__status
         margin-left: 12px
     &__btn
-        display: flex;
-        width: 80px;
-        height: 29px
-        padding: 4px 12px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 4px;
+        display: flex
+        width: 80px
+        height: 29p
+        padding: 4px 12px
+        justify-content: center
+        align-items: center
+        gap: 10px
+        border-radius: 4px
         color: $active-text
         border: 1px solid $active-text
-        background: rgba(22, 192, 152, 0.38);
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: -0.14px;
+        background: rgba(22, 192, 152, 0.38)
+        font-size: 14px
+        font-weight: 500
+        letter-spacing: -0.14px
+        transition: 0.3s all
         &.inactive
             background: $inactive-bg
             color: $inactive-text
             border: 1px solid $inactive-text
+            &:hover
+                background: #faa3a3
+        &:hover
+            background: rgba(33, 220, 176, 0.468)
+            color: #000
     &__footer
         display: flex
         align-items: center
@@ -208,14 +224,18 @@ button
         font-weight: 500
         line-height: 100%; /* 12px */
         letter-spacing: -0.12px
+        transition: 0.3s all
         &:last-child
             margin-right: 0
         &.ellipsis
             padding: 10px 0 0 0
             background: none
             border: none
-
-
+        &_active 
+                background: $active-elem
+                color: #fff
+        &:hover:not(.ellipsis)
+            background: #c5c5c5
 
 .divider
     // width: 100%
@@ -228,6 +248,31 @@ button
         margin: 20px auto
         padding: 0 44px 0 40px 
 
-.active 
-    background: $active-elem
-    color: #fff
+.burger-icon
+    display: none
+    position: absolute
+    right: 20px
+    top: 20px
+    font-size: 24px
+    cursor: pointer
+    z-index: 999
+    &.show
+        color: #fff
+
+.overlay
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); // Полупрозрачный серый цвет
+    visibility: hidden
+    z-index: 1; 
+
+.dashboard.show
+    visibility: visible
+    left: 0px
+
+.overlay.show
+    visibility: visible
+
